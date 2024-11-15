@@ -115,22 +115,78 @@ select:focus, input:focus {
   color: #81C784;  /* Green text for output */
 }
 
-/* Responsive Styling */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 2em;
-  }
+/* Footer Styling */
+.footer {
+  background-color: #181818;  /* Slightly lighter dark background */
+  color: #e0e0e0;  /* Light text color */
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  position: fixed;  /* Ensures footer is always at the bottom */
+  bottom: 0;  /* Positions the footer at the bottom */
+  left: 0;
+  border-top: 2px solid #4CAF50;  /* Green top border for distinction */
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.2);  /* Subtle shadow for depth */
+}
 
+/* Footer Text Styling */
+.footer p {
+  font-size: 1.1em;
+  margin: 0;
+  color: #81C784;  /* Soft green text */
+  letter-spacing: 1px;  /* Adding slight spacing for a clean look */
+}
+
+.footer a {
+  color: #81C784;  /* Green link color */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #66BB6A;  /* Lighter green for hover effect */
+  text-decoration: underline;
+}
+
+.footer .social-links {
+  margin-top: 15px;
+}
+
+.footer .social-links a {
+  margin: 0 10px;
+  font-size: 1.5em;
+  color: #81C784;
+  transition: transform 0.3s ease;
+}
+
+.footer .social-links a:hover {
+  transform: scale(1.2);  /* Slightly enlarge on hover */
+  color: #66BB6A;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 600px) {
   .tabs {
     flex-direction: column;
-    margin-bottom: 10px;
   }
 
   .tab {
-    margin-bottom: 10px;
+    margin: 5px 0;
+    width: 100%;
+    text-align: center;
   }
 
   .container {
-    padding: 20px;
+    width: 100%;
+  }
+
+  .input-group {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .input-group select, .input-group input {
+    width: 48%;
   }
 }
