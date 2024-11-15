@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit Converter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Unit Converter</h1>
+
+  <!-- Tab Navigation -->
+  <div class="tabs">
+    <div class="tab active-tab" data-tab="distance">Distance</div>
+    <div class="tab" data-tab="weight">Weight</div>
+    <div class="tab" data-tab="temperature">Temperature</div>
+  </div>
+
+  <div class="container">
+    <!-- Distance Category -->
+    <div class="category active" id="distance">
+      <div class="input-group">
+        <input type="number" id="distanceInput" placeholder="Enter value">
+        <select id="unitFromDistance">
+          <option value="meters">Meters</option>
+          <option value="kilometers">Kilometers</option>
+          <option value="miles">Miles</option>
+          <option value="centimeters">Centimeters</option>
+          <option value="millimeters">Millimeters</option>
+          <option value="inches">Inches</option>
+        </select>
+        <select id="unitToDistance">
+          <option value="meters">Meters</option>
+          <option value="kilometers">Kilometers</option>
+          <option value="miles">Miles</option>
+          <option value="centimeters">Centimeters</option>
+          <option value="millimeters">Millimeters</option>
+          <option value="inches">Inches</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Weight Category -->
+    <div class="category" id="weight">
+      <div class="input-group">
+        <input type="number" id="weightInput" placeholder="Enter value">
+        <select id="unitFromWeight">
+          <option value="grams">Grams</option>
+          <option value="kilograms">Kilograms</option>
+          <option value="pounds">Pounds</option>
+          <option value="ounces">Ounces</option>
+          <option value="stones">Stones</option>
+        </select>
+        <select id="unitToWeight">
+          <option value="grams">Grams</option>
+          <option value="kilograms">Kilograms</option>
+          <option value="pounds">Pounds</option>
+          <option value="ounces">Ounces</option>
+          <option value="stones">Stones</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Temperature Category -->
+    <div class="category" id="temperature">
+      <div class="input-group">
+        <input type="number" id="temperatureInput" placeholder="Enter value">
+        <select id="unitFromTemperature">
+          <option value="celsius">Celsius</option>
+          <option value="fahrenheit">Fahrenheit</option>
+          <option value="kelvin">Kelvin</option>
+        </select>
+        <select id="unitToTemperature">
+          <option value="celsius">Celsius</option>
+          <option value="fahrenheit">Fahrenheit</option>
+          <option value="kelvin">Kelvin</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Conversion Result -->
+    <div class="output-container">
+      <span id="convertedValue">Converted value</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
